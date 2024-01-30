@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Мой первый сайт</title>
-  <style>
-    /* Здесь мы определяем стили для элементов на странице */
-    body {
-      font-family: Arial, sans-serif; /* Шрифт для всего текста */
-      background-color: #F0F8FF; /* Цвет фона */
-    }
-    h1 {
-      color: #0000FF; /* Цвет заголовка */
-      text-align: center; /* Выравнивание по центру */
-    }
-    ul.navbar {
-      list-style-type: none; /* Убираем маркеры для списка */
-      margin: 0; /* Обнуляем отступы */
-      padding: 0; /* Обнуляем отступы */
-      overflow: hidden; /* Скрываем переполнение содержимого */
-      background-color: #333; /* Цвет фона для навигации */
-    }
-    li {
-      float: left; /* Выстраиваем элементы списка в ряд */
-    }
-    li a {
-      display: block; /* Делаем ссылки блочными */
-      color: white; /* Цвет текста для ссылок */
-      text-align: center; /* Выравнивание по центру */
-      padding: 14px 16px; /* Отступы сверху-снизу и слева-справа */
-      text-decoration: none; /* Убираем подчеркивание для ссылок */
-    }
-    li a:hover {
-      background-color: #111; /* Цвет фона при наведении курсора */
-    }
-    p {
-      margin: 10px; /* Отступы для абзацев */
-    }
-    address {
-      font-style: italic; /* Курсивный шрифт для адреса */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Новостной сайт</title>
+    <style>
+        /* Здесь вы можете добавить свой собственный стиль */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .news-item {
+            width: 30%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .news-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .news-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .news-item p {
+            font-size: 14px;
+            color: #666666;
+        }
+        .news-item a {
+            display: block;
+            text-align: right;
+            font-size: 16px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <!-- Меню навигации по сайту -->
-  <ul class="navbar">
-    <li><a href="index.html">Главная</a>
-    <li><a href="musings.html">Размышления</a>
-    <li><a href="town.html">Мой город</a>
-    <li><a href="links.html">Ссылки</a>
-  </ul>
-  <!-- Основное содержание -->
-  <h1>Мой первый сайт</h1>
-  <p>Добро пожаловать на мой сайт!</p>
-  <p>Он не содержит изображений, но зато имеет стиль. И он имеет ссылки, даже если они никуда не ведут...</p>
-  <p>Здесь должно быть больше информации, но я пока не знаю, что написать.</p>
-  <!-- Подпись и дата создания страницы -->
-  <address>Создано 24 января 2024 года<br>
-  мной.</address>
+    <h1>Новостной сайт</h1>
+    <div class="container">
+        <div class="news">
+            <!-- Здесь вы можете добавить свои новости -->
+            <div class="news-item">
+                <img src="image1.jpg" alt="Новость 1">
+                <h3>Заголовок новости 1</h3>
+                <p>Краткое описание новости 1</p>
+                <a href="link1.html">Читать далее</a>
+            </div>
+            <div class="news-item">
+                <img src="image2.jpg" alt="Новость 2">
+                <h3>Заголовок новости 2</h3>
+                <p>Краткое описание новости 2</p>
+                <a href="link2.html">Читать далее</a>
+            </div>
+            <div class="news-item">
+                <img src="image3.jpg" alt="Новость 3">
+                <h3>Заголовок новости 3</h3>
+                <p>Краткое описание новости 3</p>
+                <a href="link3.html">Читать далее</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
