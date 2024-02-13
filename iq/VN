@@ -51,7 +51,8 @@
     }
   </style>
 </head>
-   <button style="background-color: gold; color: red; font-size: 20px;" onclick="window.open('https://qeqoqe.github.io/seregapirat333/')">Вернуться</button>
+
+   <button style="background-color: gold; color: red; font-size: 20px;" onclick="window.open('https://qeqoqe.github.io/seregapirat333/index.html')">Вернуться</button>
 <body>
   <h1>Интересные места Великого Новгорода</h1>
   <div class="container">
